@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+:root {
+--main-color: #000000;
+--secondary-color: #f6f6f6;
+--terciary-color: #339966;
+
+--main-font: 'Montserrat', sans-serif;
+--title-font: 'Krona One', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 5rem
+}
+
+.cabecalho-home {
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--terciary-color);
+    text-decoration: none;
+
+}
+
+.titulo-destaque{
+    color:var(--terciary-color);
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5.125rem;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--title-font);
+}
+
+.apresentacao__conteudo__texto{
+    padding: 5%;
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.apresentacao__links__link{
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: 0.188rem solid var(--terciary-color);
+    width: 50%;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.344rem 0;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--main-font);
+}
+
+.apresentacao__links__link:hover{
+
+    background-color: var(--terciary-color);
+}
+
+.rodape {
+    padding: 1.5rem;
+    background-color: var(--terciary-color);
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.snake-foto {
+    width: 50%;
+    
+}
+
+@media (max-width: 1200px) {
+.apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+}
+
+.cabecalho {
+    padding: 10%;
+    justify-content: center;
+}
+
+.apresentacao__conteudo {
+    width: auto;
+    padding: 5%;
+}
+}
